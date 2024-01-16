@@ -44,6 +44,9 @@ namespace Components {
           const Fw::CmdStringArg& greeting //!< Greeting to repeat in the Hello event
       );
 
+    private:
+      U32 m_greetingCount;
+
   };
 
 }
