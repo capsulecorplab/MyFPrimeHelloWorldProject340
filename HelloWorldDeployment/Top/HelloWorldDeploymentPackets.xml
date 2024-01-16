@@ -82,5 +82,6 @@
 
     <ignore>
         <channel name="cmdDisp.CommandErrors"/>
+        <channel name="helloWorld.GreetingCount"/>
     </ignore>
 </packets>
