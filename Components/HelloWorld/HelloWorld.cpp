@@ -37,7 +37,14 @@ namespace Components {
         const Fw::CmdStringArg& greeting
     )
   {
-    // TODO
+    // Copy the command string input into an event string for the Hello event
+    Fw::LogStringArg eventGreeting(greeting.toChar());
+    // Emit the Hello event with the copied string
+    this->log_ACTIVITY_HI_Hello(eventGreeting);
+    
+    this->tlmWrite_GreetingCount(++this->m_greetingCount);
+    
+    // Tell the fprime command system that we have completed the processing of the supplied command with OK status
     this->cmdResponse_out(opCode, cmdSeq, Fw::CmdResponse::OK);
   }
 
