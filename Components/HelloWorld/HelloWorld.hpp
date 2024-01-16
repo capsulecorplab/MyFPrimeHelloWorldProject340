@@ -35,12 +35,13 @@ namespace Components {
       // Handler implementations for commands
       // ----------------------------------------------------------------------
 
-      //! Handler implementation for command TODO
+      //! Handler implementation for command SAY_HELLO
       //!
-      //! TODO
-      void TODO_cmdHandler(
+      //! Command to issue greeting with maximum length of 20 characters
+      void SAY_HELLO_cmdHandler(
           FwOpcodeType opCode, //!< The opcode
-          U32 cmdSeq //!< The command sequence number
+          U32 cmdSeq, //!< The command sequence number
+          const Fw::CmdStringArg& greeting //!< Greeting to repeat in the Hello event
       );
 
   };
