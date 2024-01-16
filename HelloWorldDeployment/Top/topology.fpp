@@ -41,6 +41,7 @@ module HelloWorldDeployment {
     instance rateGroupDriver
     instance textLogger
     instance systemResources
+    instance helloWorld
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
