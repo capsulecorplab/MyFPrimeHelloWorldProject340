@@ -15,7 +15,8 @@ namespace Components {
 
   HelloWorld ::
     HelloWorld(const char* const compName) :
-      HelloWorldComponentBase(compName)
+      HelloWorldComponentBase(compName),
+      m_greetingCount(0)
   {
 
   }
